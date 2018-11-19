@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+body {
+	background:  #f1ebeb;
+}
+
+#carousel {
+  	position: relative;
+}
+#carousel .overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	color: white;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#carousel .overlay .container,
+#carousel .overlay .row {
+  	height: 100%;
+}
+
+#main .carousel-inner img {
+	max-height: 80vh;
+	object-fit: cover;
+	/* filter: grayscale(70%); */
+}
+#menu-icon {
+	color: white !important;
+}
+
+.bg-dark {
+	background-color: black !important: 
+}
+.btn-sports {
+	background-color: #940715;
+	color: white;
+}
+
+.btn-sports:hover {
+ 	background-color: #770611;
+}
+
+.dropdown-menu {
+	background:  black !important;
+	border-top:  2px solid transparent !important;
+	border-right:  2px solid #940715 !important;
+	border-bottom:  2px solid #940715 !important;
+	border-left:  2px solid transparent !important;
+}
+.dropdown-item {
+	color: white !important;
+}
+.dropdown-item:hover {
+	color: #940715 !important;
+	background:  black !important;
+}
+
+/* FILTER */
+.black { background:  black; }
+.gray { background:  #797979; }
+.gray-color { color: #797979 }
+.red { background:  #9a0808; }
+.purple { background:  #710b8a; }
+.yellow { background:  #d0cc33; }
+.green { background:  #1fbb16; }
+
+.breadcrumb {
+	background:  none !important;
+}
+.breadcrumb a {
+	color: #940715 !important;
+}
+.border-sport {
+	border-bottom: 2px solid black !important;
+}
+.btn-link {
+	color: black !important;
+}
+.btn-link:hover {
+	color: #940715 !important;
+	text-decoration:  none !important;
+}
+.card-header {
+	background:  none !important;
+	padding:  .2em !important;
+}
+
+.filter-size {
+	list-style: none;
+	padding: 0;
+}
+
+.item-store:hover {
+	text-decoration: none !important;
+}
+.like {
+	position: absolute;
+    color: #bf34b3 !important;
+    right: 3%;
+    top: 1%;
+}
+.like:hover {
+    color: #940715 !important;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff !important;
+    background-color: #940715 !important;
+    border-bottom:  2px solid black !important;
+    
+}
+.page-link {
+	border: 1px solid black !important;
+	border-bottom:  2px solid !important;
+	color:  black !important;
+}
+.price {
+	color: black !important;
+}
+.inline {
+	display: inline;
+}
+.inlineB {
+	display: inline-block;
+}
+.promo {
+	position: absolute;
+    left: 3%;
+    top: 1%;
+}
+.size {
+	border: 1px solid black;	
+	display: inline-block;
+	margin: .2em;
+	min-height: 38px;
+	padding: .4em .6em;
+	text-align: center;
+	width: 75px;
+}
+.size:hover {
+	/* bor */
+	border-bottom: 1px solid #940715;
+	cursor: pointer;
+}
+.size-color {	
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	border:  1px solid transparent !important;
+}
+
+
+/* FOOTER */
+.footer {
+	background: black;
+	font-family: 'Lato', sans-serif !important;
+}
+.footer a {
+	color: white;
+	font-size: 1.2em;
+	padding: .5em;
+}
+.footer a:hover {
+	color: #940715 !important;
+	font-size: 1.2em;
+	padding: .5em;
+}
+.footer p {
+	color: white;
+}
+
+.header {
+	background: black;
+}
+
+.home {
+	background: #80808024;
+	padding: .5em;
+	border-radius: 5px;
+	font-size: 1.1em;
+}
+
+.nav-link {
+	color: white;
+}
+.nav-link:hover {
+	color: #940715;
+}
+
+.title {
+	font-family: 'Lato', sans-serif !important;
+}
+.text-sport {
+	color: #940715 !important;
+}
+
+@media screen and (max-width: 768px) {
+	#logo {
+		color: white !important;
+	}
+}

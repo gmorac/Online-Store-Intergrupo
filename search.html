@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="Giovanny Mora"/>
+	<meta name="keywords" content="html,css,giovanny,frontend, frameworks, bootstrap, UI, intergrupo"/>
+	<meta name="description" content="PRUEBA DE UI -  Web Master DISEÑO DE INTERFAZ – UI "/>
+	<title>Sports Store - Search</title>
+	<link rel="stylesheet" href="css/store.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+	<!-- header -->
+	<header class="header">
+		<!-- navbar -->
+		<div class="container">
+			<nav class="navbar navbar-expand-lg ">
+				<a id="logo" class="navbar-brand text-sport" href="#">Sports Store</a>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"><i id="menu-icon" class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+				    	<li class="nav-item active">
+				        	<a class="nav-link" href="#">Hombre <span class="sr-only">(current)</span></a>
+				      	</li>
+				      	<li class="nav-item">
+				        	<a class="nav-link" href="#">Mujer</a>
+				      	</li>
+				      	<li class="nav-item dropdown">
+				        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Deporte
+				        </a>
+					        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          <a class="dropdown-item" href="#">Fútbol</a>
+					          <a class="dropdown-item" href="#">Basketball </a>
+					          <div class="dropdown-divider"></div>
+					          <a class="dropdown-item" href="#">Outdoor </a>
+					          <a class="dropdown-item" href="#">Running </a>
+					          <a class="dropdown-item" href="#">Training </a>
+					        </div>
+				      	</li>
+				    </ul>
+				    <form class="form-inline my-2 my-lg-0">
+				      <input class="form-control mr-sm-2" type="search" placeholder="Estoy buscando ..." aria-label="Search">
+				      <button class="btn btn-sports my-2 my-sm-0 " type="submit">Buscar</button>
+				    </form>
+				</div>
+			</nav>			
+		</div>		
+	</header>
+
+	<section class="section-item-description">
+		<div class="container">
+			<nav aria-label="breadcrumb" class="mt-2">
+				<ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item"><a href="#">Tenis Hombre</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Jordan Flight Tradition</li>
+			  	</ol>
+			</nav>
+
+			<div class="row">
+				<!-- filter -->
+				<div class="col-md-4">
+					<div class="card" >
+						<div class="card-body">
+					    	<h5 class="card-title text-center">TUS FILTROS <small><a href="" class="text-sport ">Borrar </a></small></h5>					    	
+							<div class="input-group mb-1">
+							  	<div class="input-group-prepend">
+							    	<div class="input-group-text">
+							    		<input type="checkbox" aria-label="Checkbox for following text input" checked="true">
+							    	</div>
+							  	</div>
+							  	<input type="text" class="form-control text-sport" aria-label="Text input with checkbox" placeholder="Hombre">
+							</div>
+							<div class="input-group mb-1">
+							  	<div class="input-group-prepend">
+							    	<div class="input-group-text">
+							    		<input type="checkbox" aria-label="Checkbox for following text input" checked="true">
+							    	</div>
+							  	</div>
+							  	<input type="text" class="form-control text-sport" aria-label="Text input with checkbox" placeholder="Jordan">
+							</div>	
+							<h5 class="card-title text-center text-sport mt-3">FILTRA TU BÚSQUEDA</h5>
+							<div class="dropdown-divider"></div>
+							<!-- name -->
+							<div>
+							    <div class="input-group">
+							    	<input type="text" class="form-control" placeholder="Nombre del producto">
+							      	<span class="input-group-btn">
+							        	<button class="btn btn-sports" type="button"><i class="fas fa-search"></i></button>
+							      	</span>
+							    </div>
+							</div>
+							<div class="dropdown-divider"></div>
+							<!-- other-filters -->
+							<div class="accordion" id="accordionExample">
+								<!-- price -->
+								<div class="card">
+									<div class="card-header" id="headingOne">
+								    	<h5 class="mb-0">
+								        	<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								          	PRECIO
+								        	</button>
+								    	</h5>
+								    </div>
+								    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									    <div class="card-body">
+									        <form>
+									    	    <div class="form-group">
+										            <label for="formControlRange">Mín $80.000 - Máx $520.000</label>
+										            <input type="range" class="form-control-range" id="formControlRange">
+									          	</div>
+									        </form>
+									    </div>
+								    </div>
+								</div>
+								<!-- size -->
+								<div class="card">
+								    <div class="card-header" id="headingTwo">
+									    <h5 class="mb-0">
+								    	    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								        	  TALLA
+								        	</button>
+								    	</h5>
+								    </div>
+								    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								    	<div class="card-body ">
+									        <ul class="filter-size ">
+									        	<li class="size ">US 10</li>
+									        	<li class="size ">US 10.5</li>
+									        	<li class="size ">US 11</li>
+									        	<li class="size ">US 11.5</li>
+									        	<li class="size ">US 12</li>
+									        	<li class="size ">US 12.5</li>
+									        	<li class="size ">US 13</li>
+									        	<li class="size ">US 13.5</li>
+									        </ul>
+								      	</div>
+								    </div>
+								</div>
+								<!-- color -->
+							  	<div class="card">
+							    	<div class="card-header" id="headingThree">
+							      	<h5 class="mb-0">
+							        	<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							          COLOR
+							        	</button>
+							      	</h5>
+							    	</div>
+							    	<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							      		<div class="card-body">
+							        		<ul class="filter-size ">
+									        	<li class="size size-color black"> </li>
+									        	<li class="size size-color gray"> </li>
+									        	<li class="size size-color red"> </li>
+									        	<li class="size size-color purple"> </li>
+									        	<li class="size size-color yellow"> </li>
+									        	<li class="size size-color green"></li>	
+									        	<li class="size size-color "></li>	
+									        </ul>
+							      		</div>
+							    	</div>
+							  	</div>
+							</div>
+					  	</div>
+					</div>
+				</div>
+				<!-- items -->
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col">
+							<form action="">
+								<div class="form-group">
+								    <select class="form-control border-sport" id="exampleFormControlSelect1">
+									    <option>Las novedades primero</option>
+									    <option>Los más buscados</option>
+									    <option>Nombre de producto [A-Z]</option>
+									    <option>Nombre de producto [Z-A]</option>
+									    <option>Precio</option>
+								    </select>
+								</div>
+							</form>							
+						</div>
+					</div>
+					<!-- results -->
+					<div class="row mb-3">
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<span class="badge badge-dark promo">Nuevo</span> <i class="fas fa-heart like"></i>
+									    <img class="card-img-top" src="image/home/1.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Speedend2end</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$239.900</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star-half"></i>
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<!-- <span class="badge badge-dark promo">Nuevo</span>--> <i class="fas fa-heart like"></i> 
+									    <img class="card-img-top" src="image/home/2.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Speed Break</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$199.900</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>									
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<!-- <span class="badge badge-dark promo">Nuevo</span>--> <i class="fas fa-heart like"></i> 
+									    <img class="card-img-top" src="image/home/3.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Ultra Boost</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$529.900</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<!-- <i class="fas price fa-star"></i> -->
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>
+							</div>
+						</div>						
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<span class="badge badge-dark promo">Nuevo</span> <i class="fas fa-heart like"></i>
+									    <img class="card-img-top" src="image/home/6.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Run Swift</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$209.000</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<!-- <span class="badge badge-dark promo">Nuevo</span>--> <i class="fas fa-heart like"></i> 
+									    <img class="card-img-top" src="image/home/7.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Mad Bounce</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$359.900</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<!-- <i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i> -->
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>									
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<!-- <span class="badge badge-dark promo">Nuevo</span>--> <i class="fas fa-heart like"></i> 
+									    <img class="card-img-top" src="image/home/4.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Jordan Flight Trad...</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$609.900</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>
+							</div>
+						</div>						
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<span class="badge badge-dark promo">Nuevo</span> <i class="fas fa-heart like"></i>
+									    <img class="card-img-top" src="image/home/7.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Galaxy Trail</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$200.000</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<!-- <i class="fas price fa-star"></i> -->
+										    			<i class="fas price fa-star-half"></i>
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<!-- <span class="badge badge-dark promo">Nuevo</span>--> <i class="fas fa-heart like"></i> 
+									    <img class="card-img-top" src="image/home/8.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Airmax Guile</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$199.000</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<!-- <i class="fas price fa-star"></i> -->
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>									
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<!-- <span class="badge badge-dark promo">Nuevo</span>--> <i class="fas fa-heart like"></i> 
+									    <img class="card-img-top" src="image/home/9.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Omega</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">$429.900</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<!-- <i class="fas price fa-star"></i> -->
+										    			<!-- <i class="fas price fa-star"></i> -->
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>
+							</div>
+						</div>						
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-md-4">
+							<div class="card-group">
+								<div class="card">
+									<a href="" class="item-store">
+										<span class="badge badge-dark promo">Nuevo</span> <i class="fas fa-heart like"></i>
+									    <img class="card-img-top" src="image/home/10.jpg" alt="Card image cap">
+									    <!-- <div class="dropdown-divider"></div> -->
+									    <div class="card-body">
+									    	<h5 class="card-title price">Black Mamba</h5>
+									    </div>
+									    <div class="card-footer">
+									    	<div class="row">
+									    		<div class="col-md-6">
+									    			<h6 class=" price inlineB">8239.900</h6>	
+									    		</div>
+									    		<div class="col-md-6 pl-0 pr-0">
+										    		<small>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    			<i class="fas price fa-star"></i>
+										    		</small>
+									    		</div>
+									    	</div>
+									    </div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- page -->
+			<div class="row">
+				<div class="col">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-end">
+						    <li class="page-item disabled">
+						      <a class="page-link" href="#" tabindex="-1"><< </a>
+						    </li>
+						    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item">
+						      <a class="page-link" href="#">>></a>
+						    </li>
+					  	</ul>
+					</nav>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h2 class="text-sport text-center">TAMBIÉN PODRÍA INTERESARTE</h2>
+					<div class="dropdown-divider"></div>					
+				</div>
+			</div>
+			<div class="row">				
+				<div class="col-md-4">
+					<div class="card-group">
+						<div class="card">
+						    <img class="card-img-top" src="image/home/1.jpg" alt="Card image cap">
+						    <div class="card-body">
+						      <h5 class="card-title">Speedend2end</h5>
+						      <p class="card-text">Presenta un diseño ligero  que permite jugar día tras día. La mediasuela Cloudfoam y el forro textil te ofrecen una comodidad excelente en la cancha.</p>
+						       <a href="#" class="btn btn-dark btn-block">Comprar</a>
+						    </div>
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-group">
+						<div class="card">
+						    <img class="card-img-top" src="image/home/2.jpg" alt="Card image cap">
+						    <div class="card-body">
+						      <h5 class="card-title">Speed Break</h5>
+						      <p class="card-text">Hazte con el control en la cancha con esta zapatilla de baloncesto. Luce una parte superior de malla transpirable y una suela de goma que te ofrece un gran agarre</p>
+						       <a href="#" class="btn btn-dark btn-block">Comprar</a>
+						    </div>
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-group">
+						<div class="card">
+						    <img class="card-img-top" src="image/home/3.jpg" alt="Card image cap">
+						    <div class="card-body">
+						      <h5 class="card-title">Street Fire</h5>
+						      <p class="card-text">Esta zapatilla de baloncesto te permite desplegar tu juego en cualquier superficie. La mediasuela luce un diseño moteado que le aporta un toque de estilo urbano retro.</p>
+						       <a href="#" class="btn btn-dark btn-block">Comprar</a>
+						    </div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- relacionados -->
+	<!-- footer -->
+	<footer class="footer text-sport  mt-4 pt-4 pb-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<h4 >Contáctenos</h4>
+					<p>
+						Saint-Petersburg, <br>
+						191196, Millionnaya st. 29
+					</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<h4 >Síguenos en</h4>	
+					<a href=""><i class="fab fa-facebook-f"></i></a>		
+					<a href=""><i class="fab fa-twitter"></i></a>			
+					<a href=""><i class="fab fa-instagram"></i></a>			
+					<a href=""><i class="fab fa-behance"></i></a>			
+					<a href=""><i class="fab fa-google-plus-g"></i></a>				
+				</div>
+				<div class="col-md-4 text-center">
+					<h4 >Suscríbete</h4>
+					<div>
+					    <div class="input-group">
+					    	<input type="text" class="form-control" placeholder="Recibir información">
+					      	<span class="input-group-btn">
+					        	<button class="btn btn-sports" type="button">Suscribirse!</button>
+					      	</span>
+					    </div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
